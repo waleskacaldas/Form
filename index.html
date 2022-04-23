@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <link rel="icon" href="img/behold-logo-small.png">
+    <title>Behold</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <title>Formulário de Inscrição</title>
+    <div class="background-overlay">
+      <div id="container">
+        <div class="logo-container">
+          <img src="img/behold-logo.png" alt="Logo Behold">  
+        </div>
+        <div class="painel-container">
+            <div class="painel">
+                <h1 class="titulo">Criar conta</h1>
+
+                <p class="painel-subtitulo">Você já tem uma conta? <a href="##">Entre aqui.</a></p>
+
+                <form onsubmit="alert('Cadastro realizado com sucesso')">
+                  <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" required id="email">
+
+                    <!--Div pra criação de efeito-->
+                    <div class="input__indicador"></div>
+                  </div>
+
+                  <div class="name">
+                    <div class="input">
+                      <label for="primeiro-nome">Primeiro nome</label>
+                      <input type="text" required id="primeiro-nome">
+
+                      <div class="input__indicador"></div>
+
+                    </div>
+  
+                    <div class="input">
+                      <label for="sobrenome">Sobrenome</label>
+                      <input type="text" required id="sobrenome">
+                      
+                      <div class="input__indicador"></div>
+                    </div>
+                  </div>
+
+                  <div class="input">
+                    <label for="password">Senha</label>
+                    <input type="password" required id="password">
+
+                    <div class="input__indicador"></div>
+                  </div>
+
+                  <div class="data-nascimento">
+                    <h2 class="data-nascimento-heading">Data de nascimento</h2>
+
+                    <div class="data-nascimento__inputs">
+                      <div class="dropdown">
+                        <label for="mes">Mês</label>
+  
+                        <select name="mes" id="mes">
+                          <option value="janeiro">Janeiro</option>
+                          <option value="fevereiro">Fevereiro</option>
+                          <option value="marco">Março</option>
+                          <option value="abril">Abril</option>
+                          <option value="maio">Maio</option>
+                          <option value="junho">Junho</option>
+                          <option value="julho">Julho</option>
+                          <option value="agosto">Agosto</option>
+                          <option value="setembro">Setembro</option>
+                          <option value="outubro">Outubro</option>
+                          <option value="novembro">Novembro</option>
+                          <option value="dezembro">Dezembro</option>
+                        </select>
+                      </div>
+  
+                      <div class="input">
+                        <label for="dia">Dia</label>
+                        <input type="number" required id="dia" min="1" max="31">
+  
+                        <div class="input__indicador"></div>
+                      </div>
+  
+                      <div class="input">
+                        <label for="ano">Ano</label>
+                        <input type="number" required id="ano" min="1920" max="2022">
+  
+                        <div class="input__indicador"></div>
+                      </div>
+                    </div>    
+                  </div>
+
+                  <p class="termos">
+                    Ao clicar em criar conta, concordo que li e aceito os <a href="##">Termos de Uso</a> e a <a href="##">Política de Privacidade.</a>
+                  </p>
+
+                  <button type="submit">Criar conta</button>
+                </form>
+              </div>
+        </div>
+      </div>
+    </div>
+          
+   
+  </body>
+</html>
